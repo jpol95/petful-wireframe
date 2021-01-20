@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.background {
+    background-size: contain, cover;
+    width: 100%;
+}
+
+header {
+    overflow: hidden;
+    height: 750px;
+}
+
+
+
+h2 {
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+main p {
+    font-family: 'Lato', serif;
+    font-size: 25px;
+}
+
+main { 
+    padding: 0px 15%;
+}
+
+.petpics {
+    display: flex;
+    justify-content:space-evenly
+}
+
+.petpics img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.border {
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.start {
+    margin-top: 100px;
+}
+
+.container-cat, .container-dog {
+    position: relative;
+}
+
+hr {
+    border: none;
+    height:40px; 
+    background-image: url("paw.jpg"); 
+    background-size: contain;
+    margin: 50px -210px;
+
+}
+
+.overlay {
+    top: 0px;
+    background-color:  #d8e3db;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container-dog:hover .overlay, .container-cat:hover .overlay {
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.container-dog:hover .o-text {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-size: 20px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.o-text {
+    top: 0px;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
