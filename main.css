@@ -43,23 +43,26 @@ main {
     padding: 0px 15%;
 }
 
-.petpics, .petpics-adoption {
+.petpics {
     display: flex;
     justify-content:space-evenly
 }
 
-.petpics img, .petpics-adoption img {
+.petpics img{
     height: 300px;
     width: 300px;
     border-radius: 50%;
 }
-
-.petpics-adoption {
-    text-align: center;
+.petpics-adoption img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
 }
 
-.petpics-adoption img {
-    border-radius: 0px;
+.petpics-adoption {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .petpics-adoption .container-cat, .petpics-adoption .container-dog {
@@ -67,9 +70,11 @@ main {
     /* box-shadow: 10px 10px 5px #aaaaaa; */
     /* border-radius: 5px; */
     background-color: white;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 20% 30px 20%;
     font-family: 'Cinzel', serif;
     font-size: 25px;
+    margin-bottom: 20px;
+    
 }
 
 .border {
@@ -186,8 +191,9 @@ a:visited {
     height: 100px;
 }
 
-.background-adoption {
-    background-image: url("playwithdog.jpg");
-    background-size: cover, contain;
-    blur
+.pet-background {
+    background-color: rgb(237,236,236);
+    padding: 5% ;
+    border: 0.5px solid black;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
 }
