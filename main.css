@@ -14,7 +14,7 @@ body {
 
 .background-container {
     z-index: 10;
-    background-color: rgb(0,0,0)
+    background-color: rgb(0,0,0, 0.5)
 }
 
 header {
@@ -112,5 +112,22 @@ hr {
 
 
 .navbar { 
-    background-color: white;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .left {
+    color: white;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.navbar .right { 
+    color: white;
+    margin-top: 20px;
+    margin-right: 20px;
 }
